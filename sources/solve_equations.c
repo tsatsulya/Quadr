@@ -1,4 +1,4 @@
-#include "solve_equations.h"
+#include "../headers/solve_equations.h"
 
 
 int is_equal(double a, double b) {

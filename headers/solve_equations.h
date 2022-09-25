@@ -15,7 +15,13 @@ enum number {
     TWO    = 2,
 };
 
+static double min(double a, double b) {
+    return (a > b) ?  b : a;
+}
 
+static double max(double a, double b) {
+    return (a < b) ?  b : a;
+}
 
 int is_equal(double a, double b);
 
