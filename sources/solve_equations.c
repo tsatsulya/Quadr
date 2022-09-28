@@ -1,5 +1,12 @@
 #include "../headers/solve_equations.h"
 
+double min(double a, double b) {
+    return (a > b) ?  b : a;
+}
+
+double max(double a, double b) {
+    return (a < b) ?  b : a;
+}
 
 int is_equal(double a, double b) {
     return abs(a-b) < EPS; 
@@ -12,7 +19,7 @@ enum number solve_linear( double a, double b, double* x ) {
     assert (isfinite(b));
 
 
-    if (is_equal(a, 0)) { 
+    if (is_equal(a, 0)) { // TODO: extract in is_zero
         if (is_equal(b, 0))                      //0 = 0
             return INF;
 

@@ -1,8 +1,6 @@
 #include <assert.h>
 #include <ctype.h>
 #include "headers/test.h"
-// TODO: doxygen
-
 
 // //{============================================================================
 //! For safer natural+0 numbers
@@ -11,39 +9,40 @@
 //! @note INF = -1 is for infinite numbers
 //}============================================================================
 
-static void solutions_output(enum number num_of_solv, double x1, double x2) {
-    switch (num_of_solv)
-    {
 
-        case ZERO:
-            printf ("No solutions:(((\n");
-            break;
+// static void solutions_output(enum number num_of_solv, double x1, double x2) {
+//     switch (num_of_solv)
+//     {
 
-        case ONE:
-            printf ("1 solution: %lf!\n", x1);
-            break;
+//         case ZERO:
+//             printf ("No solutions:(((\n");
+//             break;
 
-        case TWO:
-            printf ("2 solutions: %lf and %lf!\n", x1, x2);
-            break;
+//         case ONE:
+//             printf ("1 solution: %lf!\n", x1);
+//             break;
 
-        case INF:
-            printf ("Infinite number of solutions :33\n");
-            break;
+//         case TWO:
+//             printf ("2 solutions: %lf and %lf!\n", x1, x2);
+//             break;
 
-        default:
-            printf ("ERROR: invalid values of solutions\n");
-            return;
+//         case INF:
+//             printf ("Infinite number of solutions :33\n");
+//             break;
 
-    }
-}
+//         default:
+//             printf ("ERROR: invalid values of solutions\n");
+//             return;
+
+//     }
+// }
 
 
 
 int main () {
     
-    double a = NAN, b = NAN, c = NAN;
-    double x1 = NAN, x2 = NAN;
+    //double a = NAN, b = NAN, c = NAN;
+    //double x1 = NAN, x2 = NAN;
 
     global_testing("tests");
 

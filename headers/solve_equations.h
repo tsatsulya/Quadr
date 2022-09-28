@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include <assert.h>  
 #include <math.h>  
-const double EPS = 0.000001;
 
+const double EPS = 0.000001;
 
 enum number {
     ERR    = -2,
@@ -15,15 +15,11 @@ enum number {
     TWO    = 2,
 };
 
-static double min(double a, double b) {
-    return (a > b) ?  b : a;
-}
+double min(double a, double b);
+double max(double a, double b);
 
-static double max(double a, double b) {
-    return (a < b) ?  b : a;
-}
-
-int is_equal(double a, double b);
+int is_equal(double a, double b); // TODO: stttttttttttaaaattiiiiiiiicccc
+// BuT NoT iN HeaDeR
 
 //{============================================================================
 //! Solve linear equation " ax + b = 0 "
