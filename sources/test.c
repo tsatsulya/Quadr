@@ -23,7 +23,6 @@ Test* tests_init(const char* path, int* tests_count) {
             continue; 
         }
         else {
-            // TODO: Why "r"? Check out compound literals!
             *(tests+i) = ( Test ){a, b, c, ( enum number ) result, x1, x2};
         }
 
@@ -79,7 +78,7 @@ bool test_quadratic_solver(Test* test, double* x1, double* x2, enum number resul
     return OK;
 }
 
-void global_testing(const char* path) { // TODO: global warming
+void testing(const char* path) { 
 
     int tests_count;
 
